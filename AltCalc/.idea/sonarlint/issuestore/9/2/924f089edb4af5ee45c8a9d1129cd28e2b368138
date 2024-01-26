@@ -1,0 +1,22 @@
+
+g	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ë¿§¯Ô1
+g	java:S112F"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ë¿§¯Ô1
+9
+java:S1643:"Use a StringBuilder instead.(•’™’8ì¿§¯Ô1
+7
+java:S1220""Move this file to a named package.8í¿§¯Ô1
+\
+java:S1854":Remove this useless assignment to local variable "result".(™©ƒ›şÿÿÿÿ8‚À§¯Ô1
+L	java:S106"+Replace this use of System.out by a logger.(š”øÕıÿÿÿÿ8†À§¯Ô1
+m	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(ÜÁÌÊÿÿÿÿÿ8‰À§¯Ô1
+L	java:S106*"+Replace this use of System.out by a logger.(øÜİ‚ùÿÿÿÿ8‹À§¯Ô1
+j
+java:S5361*"HReplace this call to "replaceAll()" by a call to the "replace()" method.(øÜİ‚ùÿÿÿÿ8ŒÀ§¯Ô1
+P
+java:S2201Q".The return value of "replaceAll" must be used.(‚’›¶üÿÿÿÿ8À§¯Ô1
+j
+java:S5361Q"HReplace this call to "replaceAll()" by a call to the "replace()" method.(‚’›¶üÿÿÿÿ8À§¯Ô1
+P
+java:S2201R".The return value of "replaceAll" must be used.(¸ı¸üÿÿÿÿ8‘À§¯Ô1
+j
+java:S5361R"HReplace this call to "replaceAll()" by a call to the "replace()" method.(¸ı¸üÿÿÿÿ8‘À§¯Ô1
