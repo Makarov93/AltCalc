@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         var operands = getOperands(sc.nextLine());
 
         String result = "";
@@ -25,7 +26,9 @@ public class Main {
             default:
                 throw new IllegalArgumentException("Неверный оператор. Поддерживаемые операторы: +, -, *, и /.");
         }
+
         System.out.println(result);
+
     }
 
     static String[] getOperands(String input) {
@@ -77,7 +80,11 @@ public class Main {
         for (int i = 0; i < size; i++) {
             result.append(wordArr[i]);
         }
-        return "\"" + result.toString().replaceAll("\"", "") + "\"";
+        String finalResult = result.toString().replaceAll("\"", "");
+        if (finalResult.length() > 40) {
+            finalResult = finalResult.substring(0, 40) + "...";
+        }
+        return "\"" + finalResult + "\"";
     }
 
     static String multiple(String operand1, String operand2) {
@@ -95,13 +102,21 @@ public class Main {
         for (int i = 1; i < digital; i++) {
             result += word;
         }
-        return "\"" + result.replaceAll("\"" , "") + "\"";
+        String finalResult = result.replaceAll("\"", "");
+        if (finalResult.length() > 40) {
+            finalResult = finalResult.substring(0, 40) + "...";
+        }
+        return "\"" + finalResult + "\"";
     }
 
     static String addition(String operand1, String operand2) {
         String f = operand1.replaceAll("\"", "");
         String s = operand2.replaceAll("\"", "");
-        return "\"" + f + s + "\"" ;
+        String result = f + s;
+        if (result.length() > 40) {
+            result = result.substring(0, 40) + "...";
+        }
+        return "\"" + result + "\"";
     }
 
     static String subtraction(String operand1, String operand2) {
@@ -118,6 +133,10 @@ public class Main {
         for (int i = 0; i < arrF.length; i++) {
             res += arrF[i];
         }
-        return "\"" + res + "\"";
+        String finalResult = res.replaceAll("\"", "");
+        if (finalResult.length() > 40) {
+            finalResult = finalResult.substring(0, 40) + "...";
+        }
+        return "\"" + finalResult + "\"";
     }
 }
