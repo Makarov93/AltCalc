@@ -1,6 +1,4 @@
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+
 import java.util.Scanner;
 
 public class Main {
@@ -62,6 +60,9 @@ public class Main {
             } else {
                 second += arr[i];
             }
+        }
+        if (first.length() > 13 || second.length() > 13) {
+            throw new IllegalArgumentException("Длина операндов не должна превышать 10 символов.");
         }
         return new String[]{first.replaceAll("\" ", "\""), operation, second.replaceAll(" \"", "\"")};
     }
