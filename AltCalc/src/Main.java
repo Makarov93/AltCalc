@@ -24,7 +24,6 @@ public class Main {
             default:
                 throw new IllegalArgumentException("Неверный оператор. Поддерживаемые операторы: +, -, *, и /.");
         }
-
         System.out.println(result);
 
     }
